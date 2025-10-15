@@ -29,8 +29,9 @@ declare module 'vue-router/auto-routes' {
     '/links/': RouteRecordInfo<'/links/', '/links', Record<never, never>, Record<never, never>>,
     '/page/[page]': RouteRecordInfo<'/page/[page]', '/page/:page', { page: ParamValue<true> }, { page: ParamValue<false> }>,
     '/posts/': RouteRecordInfo<'/posts/', '/posts', Record<never, never>, Record<never, never>>,
+    '/posts/1': RouteRecordInfo<'/posts/1', '/posts/1', Record<never, never>, Record<never, never>>,
+    '/posts/2': RouteRecordInfo<'/posts/2', '/posts/2', Record<never, never>, Record<never, never>>,
     '/posts/hello-valaxy': RouteRecordInfo<'/posts/hello-valaxy', '/posts/hello-valaxy', Record<never, never>, Record<never, never>>,
-    '/posts/第一篇文章': RouteRecordInfo<'/posts/第一篇文章', '/posts/第一篇文章', Record<never, never>, Record<never, never>>,
     '/tags/': RouteRecordInfo<'/tags/', '/tags', Record<never, never>, Record<never, never>>,
   }
 
@@ -45,11 +46,11 @@ declare module 'vue-router/auto-routes' {
    * @internal
    */
   export interface _RouteFileInfoMap {
-    'node_modules/.pnpm/valaxy-theme-yun@0.26.6_vue@3.5.22_typescript@5.9.3_/node_modules/valaxy-theme-yun/pages/index.vue': {
+    'node_modules/valaxy-theme-yun/pages/index.vue': {
       routes: '/'
       views: never
     }
-    'node_modules/.pnpm/valaxy@0.26.6_@babel+parser_6bb47298b81d92046e670cd59d6b05c1/node_modules/valaxy/client/pages/[...path].vue': {
+    'node_modules/valaxy/client/pages/[...path].vue': {
       routes: '/[...path]'
       views: never
     }
@@ -81,20 +82,24 @@ declare module 'vue-router/auto-routes' {
       routes: '/links/'
       views: never
     }
-    'node_modules/.pnpm/valaxy-theme-yun@0.26.6_vue@3.5.22_typescript@5.9.3_/node_modules/valaxy-theme-yun/pages/page/[page].vue': {
+    'node_modules/valaxy-theme-yun/pages/page/[page].vue': {
       routes: '/page/[page]'
       views: never
     }
-    'node_modules/.pnpm/valaxy-theme-yun@0.26.6_vue@3.5.22_typescript@5.9.3_/node_modules/valaxy-theme-yun/pages/posts/index.vue': {
+    'node_modules/valaxy-theme-yun/pages/posts/index.vue': {
       routes: '/posts/'
+      views: never
+    }
+    'pages/posts/1.md': {
+      routes: '/posts/1'
+      views: never
+    }
+    'pages/posts/2.md': {
+      routes: '/posts/2'
       views: never
     }
     'pages/posts/hello-valaxy.md': {
       routes: '/posts/hello-valaxy'
-      views: never
-    }
-    'pages/posts/第一篇文章.md': {
-      routes: '/posts/第一篇文章'
       views: never
     }
     'pages/tags/index.md': {
